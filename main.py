@@ -1,9 +1,11 @@
 import time
-import enemies
-import armor
-import weapons
+from enemies import *
+from armor import *
+from weapons import *
+from player import *
+from storyline import *
 
-'''
+"""
 Create a mini-rpg with upgradeable character
 
 Character Items:
@@ -41,14 +43,6 @@ Character Items:
         Necromancer's Staff
         Wizard King's Staff
 
-    Armor:
-        Leather Armor
-        Chainmail Armor
-        Apprentice Robes
-        Robes of the Dead
-        High Wizard Robes
-        Netherite Armor
-
 
  Neutral Enemies(Portrayed as evil, but is friendly unless provoked):
  
@@ -56,15 +50,6 @@ Character Items:
  Earth Dragon of the South
  Fire Dragon of the East
  Water Dragon of the West
- 
- Boar
- Bull
- Fireflies
-'''
+"""
 
-def introduction():
-    print("Hello Traveler. What is your name?")
-    name = str(input("My name is "))
-    print (".")
-    
-    print("Hello " + name + ", my name is Rakshaska. I am The king of the Cheshire Empire.\n")
+introduction()
