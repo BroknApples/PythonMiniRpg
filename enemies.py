@@ -1,7 +1,7 @@
 # Every class has stats and attack/defense methods
 class Slime:
     """Slime class"""
-    def __init__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __init__(self):
         self.hitpoints = 1
         self.attack_damage = 1
         self.armor = 0
@@ -15,7 +15,7 @@ class Slime:
 
 class GiantSlime:
     """Giant slime class"""
-    def register(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def register(self):
         self.hitpoints = 5
         self.attack_damage = 3
         self.armor = 2
@@ -29,7 +29,7 @@ class GiantSlime:
 
 class SlimeKing:
     """Slime king Class"""
-    def register(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def register(self):
         self.hitpoints = 1000
         self.attack_damage = 100
         self.armor = 500
@@ -43,7 +43,7 @@ class SlimeKing:
 
 class Goblin:
     """Goblin class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 20
         self.attack_damage = 8
         self.armor = 6
@@ -57,7 +57,7 @@ class Goblin:
 
 class GoblinShaman:
     """Goblin shaman class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 15
         self.attack_damage = 20
         self.armor = 3
@@ -71,7 +71,7 @@ class GoblinShaman:
 
 class Orc:
     """Orc class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 100
         self.attack_damage = 30
         self.armor = 24
@@ -85,7 +85,7 @@ class Orc:
 
 class OrcGeneral:
     """Orc general class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 1
         self.attack_damage = 1
         self.armor = 0
@@ -99,7 +99,7 @@ class OrcGeneral:
 
 class DemonMinor:
     """Demon minor class"""
-    def __init__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __init__(self):
         self.hitpoints = 1
         self.attack_damage = 1
         self.armor = 0
@@ -113,7 +113,7 @@ class DemonMinor:
 
 class DemonMajor:
     """Demon major class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 1
         self.attack_damage = 1
         self.armor = 0
@@ -127,7 +127,7 @@ class DemonMajor:
 
 class DemonKing:
     """Demon king class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 1
         self.attack_damage = 1
         self.armor = 0
@@ -141,7 +141,7 @@ class DemonKing:
 
 class WindDragon:
     """Wind dragon class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 1
         self.attack_damage = 1
         self.armor = 0
@@ -155,7 +155,7 @@ class WindDragon:
 
 class EarthDragon:
     """Earth dragon class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 1
         self.attack_damage = 1
         self.armor = 0
@@ -169,7 +169,7 @@ class EarthDragon:
 
 class FireDragon:
     """Fire dragon class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 1
         self.attack_damage = 1
         self.armor = 0
@@ -183,7 +183,7 @@ class FireDragon:
 
 class WaterDragon:
     """Water dragon class"""
-    def __inti__(self, hitpoints, attack_damage, armor, dodge_chance, crit_chance, crit_damage):
+    def __inti__(self):
         self.hitpoints = 1
         self.attack_damage = 1
         self.armor = 0

@@ -42,14 +42,6 @@ Character Items:
         Basic Staff
         Necromancer's Staff
         Wizard King's Staff
-
-
- Neutral Enemies(Portrayed as evil, but is friendly unless provoked):
- 
- Wind Dragon of the North
- Earth Dragon of the South
- Fire Dragon of the East
- Water Dragon of the West
 """
 
 introduction()

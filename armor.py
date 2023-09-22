@@ -1,6 +1,6 @@
 class Leather:
     """Leather armor stats"""
-    def __init__(self, armor, dodge_chance, mana_catalyst, xp_growth, attribute):
+    def __init__(self):
         self.armor = 10
         self.dodge_chance = 10
         self.mana_catalyst = 0
@@ -10,7 +10,7 @@ class Leather:
         
 class Chainmail:
     """Chainmail armor stats"""
-    def __init__(self, armor, dodge_chance, mana_catalyst, xp_growth, attribute):
+    def __init__(self):
         self.armor = 25
         self.dodge_chance = 0
         self.mana_catalyst = 0
@@ -20,7 +20,7 @@ class Chainmail:
 
 class ApprenticeRobes:
     """Apprentice robes stats"""
-    def __init__(self, armor, dodge_chance, mana_catalyst, xp_growth, attribute):
+    def __init__(self):
         self.armor = 5
         self.dodge_chance = 0
         self.mana_catalyst = 100
@@ -30,7 +30,7 @@ class ApprenticeRobes:
         
 class HighWizardRobes:
     """Apprentice robes stats"""
-    def __init__(self, armor, dodge_chance, mana_catalyst, xp_growth, attribute):
+    def __init__(self):
         self.armor = 5
         self.dodge_chance = 0
         self.mana_catalyst = 100
@@ -40,7 +40,7 @@ class HighWizardRobes:
         
 class RobesOfTheDead:
     """Robes of the dead stats"""
-    def __init__(self, armor, dodge_chance, mana_catalyst, xp_growth, attribute):
+    def __init__(self):
         self.armor = 50
         self.dodge_chance = 15
         self.mana_catalyst = 200
@@ -50,7 +50,7 @@ class RobesOfTheDead:
 
 class Netherite:
     """Netherite armor stats"""
-    def __init__(self, armor, dodge_chance, mana_catalyst, xp_growth, attribute):
+    def __init__(self):
         self.armor = 175
         self.dodge_chance = 0
         self.mana_catalyst = 0
@@ -59,8 +59,10 @@ class Netherite:
         
 class Draconic:
     """Draconic armor stats"""
-    def __init__(self, armor, dodge_chance, mana_catalyst, xp_growth, attribute):
+    def __init__(self):
         self.armor = 250
         self.dodge_chance = 25
         self.mana_catalyst = 500
         self.xp_growth = 1.25
+        
+# , armor, dodge_chance, mana_catalyst, xp_growth, attribute
