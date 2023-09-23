@@ -1,4 +1,3 @@
-from storyline import name
 class Player:
     """User controlled character"""
     def __init__(self, name): 

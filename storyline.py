@@ -1,24 +1,41 @@
 from player import Player
 from responses import *
+from automation import printStringWithTime
 
 
 def introduction():
     """Introduction to the game"""
-    print("Hello Traveler. What is your name?")
-    name = str(input("My name is "))
-    print (".")
+    printStringWithTime("Hello Traveler. What is your name?\n")
+    printStringWithTime("Enter your name: ")
+    name = str(input())
+    print(".\n")
     
     player1 = Player(name)
     
-    print(f"Hello {name}, my name is Rakshaska. I am The king of the Cheshire Empire. \n")
-    print("You have been summoned to our world in order to defeat the demon king. ")
+    printStringWithTime(f"Hello {name}, my name is Rakshaska. I am The king of the Cheshire Empire. \n")
+    printStringWithTime("You have been summoned to our world in order to defeat the demon king.\n\n")
     
-    print("Choose a response:\n")
+    printStringWithTime("Choose a response:\n")
     introduction_response1()
     introduction_response2()
     introduction_response3()
-    choice = int(input())
     
+    cont = True
+    while cont == True:
+        try:
+            printStringWithTime("Enter 1, 2, or 3: ")
+            choice = int(input())
+            cont = False
+        except:
+            printStringWithTime("Invalid Input\n")
+        
+    
+    if choice == 1:
+        introduction_consequence1()
+    elif choice == 2:
+        introduction_consequence2()
+    elif choice == 3:
+        introduction_consequence3()
     
     
     
