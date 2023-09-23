@@ -1,5 +1,5 @@
 import time
-from player import Player
+import sys
 
 def printStringWithTime(string):
     for x in string:
@@ -8,4 +8,28 @@ def printStringWithTime(string):
 
 def isDead(player1):
     if player1.hitpoints_current == 0:
-        exit()
+        sys.exit()
+        
+def chooseOptions(cont, num):
+    while cont == True:
+        i = 1
+        while i <= num:
+            if i == 1:
+                printStringWithTime("Enter ")
+                
+            if i < (num - 1):
+                printStringWithTime(f"{i}, ")
+            elif i == (num - 1):
+                printStringWithTime(f"{i}, or ")
+            elif i == num:
+                printStringWithTime(f"{i}: ")
+                
+            i += 1
+        try:
+            choice = int(input())
+            cont = False
+        except:
+            printStringWithTime("Invalid Input\n")
+    cont = True
+    
+    return choice

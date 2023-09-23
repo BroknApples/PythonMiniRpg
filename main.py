@@ -14,6 +14,4 @@ def main():
     introduction()
     
 thread1 = threading.Thread(target = main)
-
-
 thread1.start()
