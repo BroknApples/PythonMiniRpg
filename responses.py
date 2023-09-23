@@ -15,7 +15,7 @@ def introduction_consequence2():
 
 
 def introduction_response3():
-    printStringWithTime("3. Am I alone? Will I have a saint accompany me?\n")
+    printStringWithTime("3. Will I fight alone? Or will I have someone to accompany me?\n")
     
 def introduction_consequence3():
     printStringWithTime("No, the saintess has been captured by the Demon King. That is the  \nreason we have summoned you. \n \n")

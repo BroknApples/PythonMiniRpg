@@ -1,6 +1,7 @@
+import threading
 from player import Player
 from responses import *
-from automation import printStringWithTime
+from automation import *
 
 
 def introduction():
@@ -8,9 +9,11 @@ def introduction():
     printStringWithTime("Hello Traveler. What is your name?\n")
     printStringWithTime("Enter your name: ")
     name = str(input())
-    print(".\n")
     
     player1 = Player(name)
+    
+    thread2 = threading.Thread(target = isDead(player1))
+    thread2.start()
     
     printStringWithTime(f"Hello {name}, my name is Rakshaska. I am The king of the Cheshire Empire. \n")
     printStringWithTime("You have been summoned to our world in order to defeat the demon king.\n\n")

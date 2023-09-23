@@ -14,7 +14,6 @@ def main():
     introduction()
     
 thread1 = threading.Thread(target = main)
-thread2 = threading.Thread(target = isDead)
+
 
 thread1.start()
-thread2.start()
