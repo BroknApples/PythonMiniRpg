@@ -78,4 +78,11 @@ def introduction():
         player1.equipped_weapon = magic_stick
         
     
+    printStringWithTime("We have recently been getting our supplies cut off by the demons. Go to the\n")
+    printStringWithTime("town of Celerity and kill the demon outposts near the town.\n\n")
     
+    printStringWithTime("--You tell him you will make sure you get it done.\n\n")
+    
+
+def firstEncounterCelerity():
+    printStringWithTime("YOU HAVE ENTERED CELERITY, THE SUPPLY TOWN")
